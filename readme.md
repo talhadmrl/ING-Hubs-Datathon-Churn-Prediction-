@@ -60,22 +60,7 @@ The model is optimized to handle class imbalance and mitigate overfitting:
 * `early_stopping_rounds`: 50 (Prevents overfitting)
 * `subsample` and `colsample_bytree`: 0.7 (Further reduces variance)
 
-## 5. Performance Evaluation
 
-The model was evaluated on the validation set using key business metrics:
-
-| Metric | Value | Interpretation |
-| :--- | :--- | :--- |
-| **ROC AUC** | **0.7250** | Measure of separability between classes. |
-| **Gini Coefficient** | **0.4500** | $2 \times \text{AUC} - 1$. |
-| **Recall@10%** | **0.3200** | The model correctly captures 32% of all churners by targeting the top 10% highest-risk customers. |
-| **Lift@10%** | **3.2000** | The top 10% highest-risk customers are 3.2 times more likely to churn than an average customer. |
-
-### Weighted Score (Competition Metric)
-The overall weighted score is calculated as:
-$$\text{Weighted Score} = (0.4 \times \text{Gini}) + (0.3 \times \text{Recall@10\%}) + (0.3 \times \text{Lift@10\%})$$
-
-* **Achieved Weighted Score:** **0.7200**
 
 ## 6. Feature Importance
 
