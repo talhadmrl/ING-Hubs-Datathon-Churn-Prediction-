@@ -62,7 +62,7 @@ The model is optimized to handle class imbalance and mitigate overfitting:
 
 
 
-## 6. Feature Importance
+## 5. Feature Importance
 
 The top features highlight the importance of behavioral data:
 
@@ -76,6 +76,6 @@ The top features highlight the importance of behavioral data:
 
 The high importance of **trend features** confirms that monitoring changes in customer activity is crucial for accurate churn prediction.
 
-## 7. Final Output
+## 6. Final Output
 
 The model generated churn probabilities for the test data, which were saved to the file **'submission_optimized_xgb.csv'**. This file is the final deliverable.
